@@ -1,5 +1,5 @@
-function getLongestString (stringsValues: string[], k: number): string | null {
-    if(stringsValues.length < 1 || k < 1 || stringsValues.length < k) return null;
+function getLongestString (stringsValues: string[], k: number): string {
+    if(stringsValues.length < 1 || k < 1 || stringsValues.length < k) return "";
   
     let longestString: string = "";
     for(let i: number = 0; i <= stringsValues.length - k; i++) {
