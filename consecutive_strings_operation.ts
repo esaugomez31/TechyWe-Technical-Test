@@ -1,4 +1,6 @@
+// Devuelve el string más largo de una cadena, con una cantidad N de veces sucesivas concatenadas
 function getLongestString (stringsValues: string[], k: number): string {
+    // Evaluando casos en los que no se puede determinar la solución
     if(stringsValues.length < 1 || k < 1 || stringsValues.length < k) return "";
   
     let longestString: string = "";
