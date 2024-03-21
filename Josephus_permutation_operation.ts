@@ -1,6 +1,6 @@
 function getJosephusPermutation(numberValues: number[], k: number): number {
-    // Validación de escenaios que no aplican a la solución
-    if (numberValues.length <= 1 || k <= 1) return 0;
+    // Validación de escenarios que no aplican a la solución
+    if (numberValues.length < 1 || k <= 1) return 0;
 
     // Generando copia para conservar el array original
     let currentValues: number[] = [...numberValues];
